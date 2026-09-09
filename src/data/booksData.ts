@@ -6,7 +6,7 @@ export const TURMAS_LIST: TurmaInfo[] = [
     name: 'Gratidão',
     subName: 'Turma A • Infantil',
     code: 'Turma A',
-    color: '#059669',
+    color: '#0e9095',
     badgeBg: 'bg-emerald-100 text-emerald-800 border border-emerald-300',
     badgeText: 'text-emerald-700',
     icon: 'volunteer_activism',

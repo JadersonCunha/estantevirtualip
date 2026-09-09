@@ -47,7 +47,7 @@ export const PortalHome: React.FC<PortalHomeProps> = ({
 
       {/* ── HERO ─────────────────────────────────────────── */}
       <section style={{
-        background: 'linear-gradient(135deg, #1b5e20 0%, #2e7d32 40%, #388e3c 70%, #f57c00 130%)',
+        background: 'linear-gradient(135deg, #0a6e72 0%, #0e9095 40%, #2da9ae 70%, #4dc2c7 130%)',
         padding: '0',
         position: 'relative',
         overflow: 'hidden',
@@ -67,8 +67,8 @@ export const PortalHome: React.FC<PortalHomeProps> = ({
                 padding: '6px 16px', marginBottom: 24, backdropFilter: 'blur(8px)',
                 border: '1px solid rgba(255,255,255,0.2)'
               }}>
-                <span className="material-symbols-outlined" style={{ fontSize: 16, color: '#a5d6a7' }}>auto_stories</span>
-                <span style={{ fontSize: 12, fontWeight: 700, letterSpacing: '0.06em', color: '#c8e6c9' }}>INSTITUTO PROVIDÊNCIA</span>
+                <span className="material-symbols-outlined" style={{ fontSize: 16, color: '#8bf4f8' }}>auto_stories</span>
+                <span style={{ fontSize: 12, fontWeight: 700, letterSpacing: '0.06em', color: '#8bf4f8' }}>INSTITUTO PROVIDÊNCIA</span>
               </div>
 
               <h1 style={{
@@ -100,7 +100,7 @@ export const PortalHome: React.FC<PortalHomeProps> = ({
                     fontSize: 13, fontWeight: 600, color: '#fff',
                     backdropFilter: 'blur(4px)',
                   }}>
-                    <span className="material-symbols-outlined" style={{ fontSize: 16, color: '#a5d6a7' }}>{s.icon}</span>
+                    <span className="material-symbols-outlined" style={{ fontSize: 16, color: '#6cdbdf' }}>{s.icon}</span>
                     {s.label}
                   </div>
                 ))}
@@ -345,7 +345,7 @@ export const PortalHome: React.FC<PortalHomeProps> = ({
           <div style={{
             borderRadius: 24, overflow: 'hidden',
             display: 'grid', gridTemplateColumns: '1fr',
-            background: 'linear-gradient(135deg, #1b5e20 0%, #2e7d32 60%, #1565c0 100%)',
+            background: 'linear-gradient(135deg, #0a6e72 0%, #0e9095 50%, #2da9ae 100%)',
           }}>
             <div style={{ padding: '40px 36px', color: '#fff', position: 'relative' }}>
               <div style={{ position: 'absolute', top: -20, right: -20, opacity: 0.06, pointerEvents: 'none' }}>
@@ -362,11 +362,11 @@ export const PortalHome: React.FC<PortalHomeProps> = ({
                 Meta coletiva: 100 páginas entre todas as turmas esta semana. Cada leitura conta!
               </p>
               <div style={{ maxWidth: 400, marginBottom: 24 }}>
-                <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 13, fontWeight: 700, color: '#a5d6a7', marginBottom: 10 }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 13, fontWeight: 700, color: '#8bf4f8', marginBottom: 10 }}>
                   <span>Progresso geral</span><span>80 / 100 págs</span>
                 </div>
                 <div style={{ height: 12, borderRadius: 999, background: 'rgba(255,255,255,0.15)', overflow: 'hidden' }}>
-                  <div style={{ width: '80%', height: '100%', borderRadius: 999, background: 'linear-gradient(90deg, #81c784, #ffcc02)' }} />
+                  <div style={{ width: '80%', height: '100%', borderRadius: 999, background: 'linear-gradient(90deg, #4dc2c7, #8bf4f8)' }} />
                 </div>
               </div>
               <button className="btn" onClick={onNavigateToEstante}
@@ -388,8 +388,8 @@ export const PortalHome: React.FC<PortalHomeProps> = ({
           </div>
           <div className="how-grid">
             {[
-              { n: '1', icon: 'school', color: '#2e7d32', bg: '#e8f5e9', title: 'Escolha sua turma', desc: 'Selecione a turma e entre com seu nome para acessar o acervo personalizado.' },
-              { n: '2', icon: 'auto_stories', color: '#1565c0', bg: '#e3f2fd', title: 'Leia ou baixe', desc: 'Abra o leitor interativo com modo noturno e zoom, ou baixe para ler offline.' },
+              { n: '1', icon: 'school', color: '#0e9095', bg: '#e0f7f8', title: 'Escolha sua turma', desc: 'Selecione a turma e entre com seu nome para acessar o acervo personalizado.' },
+              { n: '2', icon: 'auto_stories', color: '#2da9ae', bg: '#e0f7f8', title: 'Leia ou baixe', desc: 'Abra o leitor interativo com modo noturno e zoom, ou baixe para ler offline.' },
               { n: '3', icon: 'forum', color: '#f57c00', bg: '#fff3e0', title: 'Compartilhe ideias', desc: 'Deixe comentários, reaja aos livros e participe do desafio literário coletivo.' },
             ].map(s => (
               <div key={s.n} className="card" style={{ padding: '28px 24px', textAlign: 'center' }}>
