@@ -348,6 +348,13 @@ export const PortalHome: React.FC<PortalHomeProps> = ({
             background: 'linear-gradient(135deg, #0a6e72 0%, #0e9095 50%, #2da9ae 100%)',
           }}>
             <div style={{ padding: '40px 36px', color: '#fff', position: 'relative', overflow: 'hidden' }}>
+              <div style={{
+                position: 'absolute', bottom: -30, right: -20,
+                width: 220, height: 220, pointerEvents: 'none',
+                backgroundImage: 'url(/logo\ fundo\ slide.png)',
+                backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'center',
+                opacity: 0.12,
+              }} />
               <span className="badge" style={{ background: 'rgba(255,255,255,0.15)', color: '#c8e6c9', marginBottom: 16, fontSize: 11 }}>
                 <span className="material-symbols-outlined" style={{ fontSize: 14 }}>flag</span>
                 Desafio da Semana
