@@ -20,7 +20,14 @@ export const BookDetailModal: React.FC<BookDetailModalProps> = ({
         className="fixed inset-0"
         onClick={onClose}
       />
-      <div className="relative bg-white w-full max-w-2xl rounded-3xl p-6 sm:p-8 shadow-2xl z-10 max-h-[90vh] overflow-y-auto border border-slate-200">
+      <div className="relative bg-white w-full max-w-2xl rounded-3xl p-6 sm:p-8 shadow-2xl z-10 max-h-[90vh] overflow-y-auto border border-slate-200" style={{ overflow: 'hidden auto' }}>
+        <div style={{
+          position: 'absolute', bottom: -30, right: -30,
+          width: 220, height: 220, pointerEvents: 'none', zIndex: 0,
+          backgroundImage: 'url(/logo\ fundo\ slide.png)',
+          backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'center',
+          opacity: 0.07,
+        }} />
         
         {/* Close Button */}
         <button

@@ -12,7 +12,14 @@ export const HelpModal: React.FC<HelpModalProps> = ({ isOpen, onClose }) => {
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs animate-in fade-in">
       <div className="fixed inset-0" onClick={onClose} />
       
-      <div className="relative w-full max-w-lg bg-white rounded-3xl p-6 sm:p-8 shadow-2xl border border-slate-200 z-10 space-y-4">
+      <div className="relative w-full max-w-lg bg-white rounded-3xl p-6 sm:p-8 shadow-2xl border border-slate-200 z-10 space-y-4" style={{ overflow: 'hidden' }}>
+        <div style={{
+          position: 'absolute', bottom: -20, right: -20,
+          width: 180, height: 180, pointerEvents: 'none', zIndex: 0,
+          backgroundImage: 'url(/logo\ fundo\ slide.png)',
+          backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'center',
+          opacity: 0.07,
+        }} />
         <div className="flex items-center justify-between pb-3 border-b border-slate-100">
           <h3 className="text-lg font-black text-slate-900 font-display flex items-center gap-2">
             <span className="material-symbols-outlined text-emerald-600">help</span>

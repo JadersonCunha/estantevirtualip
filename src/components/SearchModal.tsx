@@ -35,7 +35,14 @@ export const SearchModal: React.FC<SearchModalProps> = ({
     <div className="fixed inset-0 z-50 flex items-start justify-center pt-16 px-4 bg-black/60 backdrop-blur-xs animate-in fade-in">
       <div className="fixed inset-0" onClick={onClose} />
       
-      <div className="relative w-full max-w-2xl bg-white rounded-3xl p-6 shadow-2xl border border-slate-200 z-10">
+      <div className="relative w-full max-w-2xl bg-white rounded-3xl p-6 shadow-2xl border border-slate-200 z-10" style={{ overflow: 'hidden' }}>
+        <div style={{
+          position: 'absolute', bottom: -20, right: -20,
+          width: 180, height: 180, pointerEvents: 'none', zIndex: 0,
+          backgroundImage: 'url(/logo\ fundo\ slide.png)',
+          backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'center',
+          opacity: 0.07,
+        }} />
         <div className="flex items-center gap-3 pb-4 border-b border-slate-100">
           <span className="material-symbols-outlined text-emerald-600 text-2xl">search</span>
           <input
