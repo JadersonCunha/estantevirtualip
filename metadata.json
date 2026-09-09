@@ -1,0 +1,6 @@
+{
+  "name": "Biblioteca Virtual IP",
+  "description": "Portal Literário e Estante Virtual de Livros do Instituto Providência.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
